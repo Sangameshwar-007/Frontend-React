@@ -1,19 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 import React from "react";
-import {CompanyProvider} from "./context/CompanyContext";
+import { CompanyProvider } from "./context/CompanyContext";
 import CompaniesList from "./pages/CompaniesList";
 
+import "./App.css";
+//
+const App = () => {
+    return (
+        <CompanyProvider>
+            <div className="app">
+                <h1 className="app-title">🏢 Companies Directory</h1>
+                <CompaniesList/>
+            </div>
+            {/*<div style={{backgroundColor: "blue", height: "50px"}}>Test</div>*/}
 
-const App() {
-  return (
-    <CompanyProvider>
-      <div classsName="app">
-        <h1 className="app-titlee">Companies Directory</h1>
-        <CompaniesList/>
-      </div>
-    </CompanyProvider>
-  );
-}
+        </CompanyProvider>
+
+    );
+};
+
 
 export default App;

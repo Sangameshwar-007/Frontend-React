@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f6fa;
+  color: #1e293b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: #f9fafc;
+}
+
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #103cae;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1100px;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.filter-bar input,
+.filter-bar select {
+  padding: 10px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 160px;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.filter-bar input:focus,
+.filter-bar select:focus {
+  outline: none;
+  border-color: #103cae;
+  box-shadow: 0 0 5px rgba(16, 60, 174, 0.3);
+}
+
+
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.company-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.company-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: #103cae;
+  font-weight: 600;
+}
+
+.loading,
+.error,
+.no-results {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
+  color: #475569;
+}
+
+.company-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+
+
+/*All Responsive UI*/
+
+@media (max-width: 1024px) {
+  .filter-bar {
+    justify-content: space-between;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-bar input,
+  .filter-bar select {
+    width: 100%;
+  }
+
+  .company-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.75rem;
+  }
+
+  .company-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .company-card p {
+    font-size: 0.9rem;
   }
 }
