@@ -11,7 +11,6 @@ const App = () => {
                 <h1 className="app-title">Companies Directory</h1>
                 <CompaniesList/>
             </div>
-            {/*<div style={{backgroundColor: "blue", height: "50px"}}>Test</div>*/}
 
         </CompanyProvider>
 
