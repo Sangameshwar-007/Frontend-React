@@ -5,8 +5,10 @@
   { "id": 4, "name": "Amazon", "industry": "IT Services", "location": "Mumbai", "employees": 220 },
   { "id": 5, "name": "Flipkart", "industry": "E-commerce", "location": "Bengaluru", "employees": 150 },
   { "id": 6, "name": "Infosys", "industry": "IT Services", "location": "Pune", "employees": 250 },
-  { "id": 7, "name": "Wipro", "industry": "IT Services", "location": "Bangalore", "employees": 280 },
-  { "id": 8, "name": "Zerodha", "industry": "FinTech", "location": "Bangalore", "employees": 200 },
-  { "id": 9, "name": "Byju's", "industry": "EdTech", "location": "Bangalore", "employees": 500 },
-  { "id": 10, "name": "Freshworks", "industry": "SaaS", "location": "Chennai", "employees": 180 }
-  ]
+   { "id": 7, "name": "Zerodha", "industry": "FinTech", "location": "Bangalore", "employees": 200 },
+  { "id": 8, "name": "Byju's", "industry": "EdTech", "location": "Bangalore", "employees": 500 },
+  { "id": 9, "name": "Freshworks", "industry": "SaaS", "location": "Chennai", "employees": 180 },
+  { "id": 10, "name": "Tata Consultancy", "industry": "It Servies", "location": "Mumbai", "employees": 400 },
+  { "id": 11, "name": "Ola", "industry": "Transportation", "location": "Bangalore", "employees": 350 },
+  { "id": 12, "name": "Swiggy", "industry": "FoodTech", "location": "Bangalore", "employees": 220 }
+]

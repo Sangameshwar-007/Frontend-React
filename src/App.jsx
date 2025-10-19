@@ -8,7 +8,7 @@ const App = () => {
     return (
         <CompanyProvider>
             <div className="app">
-                <h1 className="app-title">🏢 Companies Directory</h1>
+                <h1 className="app-title">Companies Directory</h1>
                 <CompaniesList/>
             </div>
             {/*<div style={{backgroundColor: "blue", height: "50px"}}>Test</div>*/}

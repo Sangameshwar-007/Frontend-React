@@ -82,6 +82,7 @@ const FilterBar = () => {
                         <MenuItem value="Bangalore">Bangalore</MenuItem>
                         <MenuItem value="Chennai">Chennai</MenuItem>
                         <MenuItem value="Pune">Pune</MenuItem>
+                        <MenuItem value="Mumbai">Mumbai</MenuItem>
                     </Select>
                 </FormControl>
 
